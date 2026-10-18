@@ -2,7 +2,7 @@
 
 Matrizes são arrays com mais de uma dimensão (o mais comum é linhas e colunas). Com o NumPy é fácil criar, alterar e fazer operações matemáticas com matrizes.
 
-## Conceitos
+ Conceitos
 - `np.array([[...],[...]])` cria uma matriz; `matriz[linha][coluna]` acessa um elemento (índices começam em 0)
 - Soma e subtração com `+` e `-`; multiplicação de matrizes com `dot()`
 - Na multiplicação C = A x B, as colunas de A devem ser iguais às linhas de B; C tem as linhas de A e as colunas de B
@@ -11,10 +11,10 @@ Matrizes são arrays com mais de uma dimensão (o mais comum é linhas e colunas
 - Funções estatísticas: `sum`, `min`, `max`, `ptp`, `mean`, `var` (variância) e `std` (desvio padrão)
 - `reshape` não altera a original e precisa manter a quantidade de elementos; `resize` altera a original e pode mudar a quantidade (completa com 0)
 
-## Exemplos e lugares aplicados
+Exemplos e lugares aplicados
 Álgebra linear, processamento de imagens, aprendizado de máquina e estatística.
 
-## Minhas anotações da aula
+Minhas anotações da aula
 - A matriz do exemplo 1 tem 4 linhas e 3 colunas; o elemento (1,2) é o 6 (segunda linha, terceiro elemento).
 - Produto 4x3 por 3x2 resulta em matriz 4x2.
 - `split(matriz, 2)` divide em 2 partes iguais; dividir em 3 dá erro porque 4 linhas não se dividem igualmente, mas em 4 partes funciona.
@@ -22,7 +22,7 @@ Matrizes são arrays com mais de uma dimensão (o mais comum é linhas e colunas
 
 ## Código
 
-### Exemplo 1: criar e alterar
+### criar e alterar
 ```python
 import numpy as np
 
@@ -35,7 +35,7 @@ print("Matriz:",matriz)
 ```
 Saída: o elemento (1,2) é `6`, as dimensões são `2` e depois da alteração a última linha vira `[10 18 30]`.
 
-### Exemplo 2: soma, subtração e produto
+### soma, subtração e produto
 ```python
 import numpy as np
 
@@ -70,7 +70,7 @@ Saída:
  [ 70 150]]
 ```
 
-### Exemplo 3: concatenar
+###  concatenar
 ```python
 import numpy as np
 
@@ -82,7 +82,7 @@ print(matrizresultante)
 ```
 Saída: uma matriz de 9 linhas e 3 colunas (as 4 linhas da primeira, as 4 da segunda e a linha de zeros).
 
-### Exemplo 4: dividir
+### dividir
 ```python
 import numpy as np
 
@@ -99,7 +99,7 @@ Saída:
  [10 20 30]]
 ```
 
-### Exemplo 5: transposta
+### transposta
 ```python
 import numpy as np
 
@@ -114,7 +114,7 @@ Saída da transposta:
  [20 40 60 80]]
 ```
 
-### Exemplo 6: funções estatísticas
+### funções estatísticas
 ```python
 import numpy as np
 
@@ -139,7 +139,7 @@ Std: 8.669871202426636
 ```
 Observação: em versões novas do NumPy (2.0 ou mais) o `matriz.ptp()` foi removido; use `np.ptp(matriz)`.
 
-### Exemplo 7: reshape e resize
+### reshape e resize
 ```python
 import numpy as np
 
