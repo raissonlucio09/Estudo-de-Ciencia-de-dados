@@ -44,7 +44,7 @@ Y = aX + b. Então a = 3.0 e b = 2.0
 32.0
 ```
 
-###polinômio de grau 2
+### polinômio de grau 2
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -66,7 +66,7 @@ Saída:
 228.9699
 ```
 
-###comparando graus 1, 2 e 3 (com resíduo)
+### comparando graus 1, 2 e 3 (com resíduo)
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -104,7 +104,7 @@ Polinomio Grau 3. Resíduo: 0.0 Predição para valor igual a 25:  4544.75
 ```
 Gráfico: grau 1 em marrom, grau 2 em vermelho e grau 3 em azul.
 
-###regressão linear múltipla (scikit-learn)
+### regressão linear múltipla (scikit-learn)
 ```python
 import numpy as np
 from sklearn import linear_model
