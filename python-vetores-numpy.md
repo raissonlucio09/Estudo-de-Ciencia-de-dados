@@ -2,17 +2,17 @@
 
 Vetores são matrizes de uma só dimensão. A biblioteca NumPy faz cálculos matemáticos de forma simples e rápida, e é muito usada em aprendizado de máquina e processamento de imagens, pois trabalha com vetores e matrizes.
 
-## Conceitos
+Conceitos
 - `np.array()` cria vetores e matrizes
 - Atributos: `shape` (formato), `dtype` (tipo dos valores), `size` (quantidade de elementos), `itemsize` (bytes de cada elemento) e `ndim` (número de dimensões)
 - Acesso e alteração pelo índice, que começa em 0
 - Criação de vetores prontos: `empty`, `zeros`, `ones`, `arange` e `random.random`
 - `arange(inicio, parada, passo)`: o valor de parada não entra
 
-## Exemplos e lugares aplicados
+Exemplos e lugares aplicados
 Cálculos numéricos, aprendizado de máquina, imagens (que são matrizes de pixels) e geração de números aleatórios.
 
-## Minhas anotações da aula
+Minhas anotações da aula
 - Vetor = matriz unidimensional (uma única coluna).
 - `shape (4,)` indica 4 elementos; `dtype int32` indica inteiros de 32 bits (4 bytes); `size` é 4 (quantidade de elementos) e `itemsize` é 4 (bytes por elemento). Com decimais o tipo vira `float64` (8 bytes por elemento).
 - `empty` cria o vetor com valores quaisquer (lixo de memória); o ideal é iniciar com `zeros` ou `ones`.
@@ -21,7 +21,7 @@ Cálculos numéricos, aprendizado de máquina, imagens (que são matrizes de pix
 
 ## Código
 
-### Exemplo 1: criação e atributos
+### criação e atributos
 ```python
 import numpy as np
 
@@ -57,7 +57,7 @@ Itemsize: 8
 Ndim: 1
 ```
 
-### Exemplo 2: acessar e alterar
+### acessar e alterar
 ```python
 import numpy as np
 
@@ -75,7 +75,7 @@ Vetor posicao 2: 67
 [  8 231  67 105]
 ```
 
-### Exemplo 3: formas de criar vetores
+### formas de criar vetores
 ```python
 import numpy as np
 
