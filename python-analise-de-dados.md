@@ -2,24 +2,24 @@
 
 Uma forma de predizer um valor a partir de valores conhecidos é a regressão linear. Em Python ela pode ser feita com o pacote NumPy (`polyfit`, para polinômios) e com a biblioteca scikit-learn (regressão linear múltipla).
 
-## Conceitos
+Conceitos
 - `np.polyfit(x, y, grau)` ajusta um polinômio aos pontos; `np.poly1d()` monta a função
 - Grau 1: `Y = aX + b`; grau 2: `Y = aX² + bX + c`; grau 3 e assim por diante
 - Resíduo: diferença entre os pontos observados e a curva obtida (`full=True` no `polyfit`)
 - Regressão linear múltipla com `LinearRegression` do scikit-learn: `Y = aX + bZ + cW + d`
 - Erro médio quadrado: média das diferenças ao quadrado entre o predito e o real
 
-## Exemplos e lugares aplicados
+ Exemplos e lugares aplicados
 Prever vendas, preços e demanda a partir de variáveis conhecidas.
 
-## Minhas anotações da aula
+Minhas anotações da aula
 - No exemplo 1 os pontos (1,5), (2,8), (3,11) e (4,14) geram `Y = 3X + 2`; prevendo X = 10, o resultado é 32.
 - No exemplo 3, os polinômios de grau 1, 2 e 3 foram comparados: o grau 3 teve resíduo 0, o grau 2 teve resíduo bem menor que o grau 1, e a previsão para X = 25 foi parecida entre os graus 2 e 3 e bem distante no grau 1.
 - No exemplo 4 os dados foram gerados com `Y = 3X - 2Z + W - 2` e a regressão recuperou exatamente essa função (erro 0). Na prática a função é desconhecida e a regressão tenta descobri-la.
 
 ## Código
 
-### Exemplo 1: polinômio de grau 1
+### polinômio de grau 1
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -44,7 +44,7 @@ Y = aX + b. Então a = 3.0 e b = 2.0
 32.0
 ```
 
-### Exemplo 2: polinômio de grau 2
+###polinômio de grau 2
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -66,7 +66,7 @@ Saída:
 228.9699
 ```
 
-### Exemplo 3: comparando graus 1, 2 e 3 (com resíduo)
+###comparando graus 1, 2 e 3 (com resíduo)
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -104,7 +104,7 @@ Polinomio Grau 3. Resíduo: 0.0 Predição para valor igual a 25:  4544.75
 ```
 Gráfico: grau 1 em marrom, grau 2 em vermelho e grau 3 em azul.
 
-### Exemplo 4: regressão linear múltipla (scikit-learn)
+###regressão linear múltipla (scikit-learn)
 ```python
 import numpy as np
 from sklearn import linear_model
