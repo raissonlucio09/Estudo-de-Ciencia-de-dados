@@ -2,17 +2,16 @@
 
 Com a biblioteca `requests` o Python acessa páginas e serviços da internet por HTTP e recebe a resposta para ser usada no programa.
 
-## Conceitos
+Conceitos
 - Métodos HTTP mais comuns: GET (buscar dados) e POST (enviar dados)
 - `status_code` indica o resultado (200 = sucesso)
 - `resposta.text` traz o conteúdo da página (HTML) e `resposta.json()` converte respostas em JSON
 - Combina bem com expressões regulares para extrair informações do HTML
 
-## Exemplos e lugares aplicados
+Exemplos e lugares aplicados
 Coletar dados de sites, consumir APIs e extrair e-mails ou preços de páginas.
 
-## Minhas anotações da aula
-(Escreva aqui com suas palavras o que o professor explicou nesta aula.)
+
 
 ## Código
 
