@@ -13,7 +13,7 @@ O Matplotlib é uma biblioteca livre e de código aberto para gráficos 2D em Py
 Exemplos e lugares aplicados
 Relatórios, pesquisas eleitorais, distribuição de frequências, comparação de grupos e apresentação de resultados de análise de dados.
 
-## Minhas anotações da aula
+Minhas anotações da aula
 - No exemplo 3, o parâmetro `'ro'` significa vermelho (r) e pontos (o) em vez da reta padrão.
 - No exemplo 6, é possível desenhar reta e pontos no mesmo `plot`, e o título vem do `plt.title()`.
 - Histograma: divide os dados em intervalos (`num_bins`) e mostra quantos valores caem em cada um. Com 4 intervalos no exemplo (1 a 80), o primeiro intervalo tem 10 ocorrências e o terceiro tem 0.
