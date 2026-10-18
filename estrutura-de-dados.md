@@ -2,14 +2,14 @@
 
 Estruturas de dados guardam vários valores em uma única variável. Em Python as principais são lista, tupla, dicionário e conjunto.
 
-## Conceitos
+Conceitos
 - Lista `[ ]`: ordenada e pode ser alterada; acessa-se pelo índice (começa em 0)
 - Tupla `( )`: ordenada, mas não pode ser alterada depois de criada
 - Dicionário `{chave: valor}`: guarda pares chave/valor
 - Conjunto `{ }`: não guarda valores repetidos e não tem ordem
 - Funções úteis: `len()`, `append()`, `sorted()`, `in`
 
-## Exemplos e lugares aplicados
+ Exemplos e lugares aplicados
 Lista de notas de alunos, cadastro de uma pessoa (dicionário), remover duplicados de uma lista (conjunto).
 
 ## Minhas anotações da aula
