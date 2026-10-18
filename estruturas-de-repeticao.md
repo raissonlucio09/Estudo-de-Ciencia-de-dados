@@ -2,18 +2,17 @@
 
 Estruturas de repetição (laços ou loops) executam um bloco de instruções várias vezes, enquanto uma condição for verdadeira ou para cada item de uma sequência.
 
-## Conceitos
+ Conceitos
 - `while`: repete enquanto a condição for verdadeira
 - `for`: repete para cada elemento de uma sequência (lista, texto, `range()`)
 - `range(inicio, fim, passo)`: gera números e o valor `fim` não entra
 - `break` interrompe o laço e `continue` pula para a próxima repetição
 - Cuidado com laço infinito: a condição do `while` precisa mudar dentro do bloco
 
-## Exemplos e lugares aplicados
+ Exemplos e lugares aplicados
 Somar valores, percorrer listas, repetir a leitura de dados até o usuário digitar algo válido, gerar tabelas.
 
-## Minhas anotações da aula
-(Escreva aqui com suas palavras o que o professor explicou nesta aula.)
+
 
 ## Código
 
