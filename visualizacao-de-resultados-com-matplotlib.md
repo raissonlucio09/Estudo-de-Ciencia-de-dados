@@ -2,7 +2,7 @@
 
 O Matplotlib é uma biblioteca livre e de código aberto para gráficos 2D em Python. O módulo `pyplot` tem uma interface parecida com a do MATLAB (que é pago e focado em cálculo numérico).
 
-## Conceitos
+ Conceitos
 - `plt.plot(x, y)` desenha linhas ou pontos; sem o eixo X, os pontos usam 0, 1, 2...
 - Formato do gráfico em texto: cor + marcador/linha. Cores: `r` vermelho, `g` verde, `b` azul, `m` magenta, `k` preto. Marcadores: `o` ponto, `D` losango. Linhas: `--` tracejada
 - `plt.xlabel()`, `plt.ylabel()` e `plt.title()` dão nomes aos eixos e ao gráfico
@@ -10,7 +10,7 @@ O Matplotlib é uma biblioteca livre e de código aberto para gráficos 2D em Py
 - Histograma (`plt.hist`), pizza (`plt.pie`) e barras (`plt.bar` e `plt.barh`)
 - `plt.legend()` mostra a legenda e `plt.show()` exibe o gráfico
 
-## Exemplos e lugares aplicados
+Exemplos e lugares aplicados
 Relatórios, pesquisas eleitorais, distribuição de frequências, comparação de grupos e apresentação de resultados de análise de dados.
 
 ## Minhas anotações da aula
@@ -20,9 +20,9 @@ Relatórios, pesquisas eleitorais, distribuição de frequências, comparação 
 - Pizza: `autopct` mostra o percentual, `explode` separa as fatias, `shadow` põe sombra e `startangle` gira o gráfico.
 - Barras: duas pesquisas de datas diferentes para os mesmos candidatos, com o segundo grupo deslocado (`index + bar_width`) e `xticks` com os nomes. `barh` faz as barras na horizontal.
 
-## Código
+Código
 
-### Exemplo 1
+###1
 ```python
 import matplotlib.pyplot as plt
 plt.plot((1,1,2,3,5,8))
@@ -31,7 +31,7 @@ plt.ylabel('Eixo Y')
 plt.show()
 ```
 
-### Exemplo 2: valores de X e Y
+### valores de X e Y
 ```python
 import matplotlib.pyplot as plt
 plt.plot((1,2,3,4),(1,8,27,64))
@@ -40,7 +40,7 @@ plt.ylabel('Valor ao cubo')
 plt.show()
 ```
 
-### Exemplo 3: só pontos vermelhos
+### só pontos vermelhos
 ```python
 import matplotlib.pyplot as plt
 plt.plot((1,2,3,4),(1,8,27,64),'ro')
@@ -49,7 +49,7 @@ plt.ylabel('Valor ao cubo')
 plt.show()
 ```
 
-### Exemplos 4 e 5: outros estilos
+###outros estilos
 ```python
 import matplotlib.pyplot as plt
 plt.plot((1,2,3,4),(1,8,27,64),'gD')   # exemplo 4: losangos verdes
@@ -59,7 +59,7 @@ plt.ylabel('Valor ao cubo')
 plt.show()
 ```
 
-### Exemplos 6 e 7: reta e pontos, título e limites dos eixos
+###reta e pontos, título e limites dos eixos
 ```python
 import matplotlib.pyplot as plt
 eixox = (1,2,3,4)
@@ -73,7 +73,7 @@ plt.ylim(0,100)    # exemplo 7
 plt.show()
 ```
 
-### Exemplos 8 e 9: histograma
+### histograma
 ```python
 import matplotlib.pyplot as plt
 
@@ -83,7 +83,7 @@ plt.hist(x, num_bins, facecolor='green')
 plt.show()
 ```
 
-### Exemplo 10: pizza
+### pizza
 ```python
 import matplotlib.pyplot as plt
 labels = 'Pretos', 'Castanhos', 'Verdes', 'Azuis'
@@ -93,7 +93,7 @@ plt.axis('equal')
 plt.show()
 ```
 
-### Exemplo 11: pizza com formatação
+###pizza com formatação
 ```python
 import matplotlib.pyplot as plt
 labels = 'Pretos', 'Castanhos', 'Verdes', 'Azuis'
@@ -105,7 +105,7 @@ plt.axis('equal')
 plt.show()
 ```
 
-### Exemplo 12: barras (pesquisa eleitoral)
+###barras (pesquisa eleitoral)
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -128,7 +128,7 @@ plt.legend()
 plt.show()
 ```
 
-### Exemplo 13: barras na horizontal
+### barras na horizontal
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
