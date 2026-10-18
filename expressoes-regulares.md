@@ -2,7 +2,7 @@
 
 Uma expressão regular (regex) é uma forma flexível e concisa de localizar cadeias de caracteres que seguem um padrão, como e-mails, telefones e endereços IP. Em Python usa-se o módulo `re`.
 
-## Conceitos
+Conceitos
 - `re.match()` procura o padrão só no início da string; `re.search()` procura em toda a string; `re.findall()` devolve todas as ocorrências em uma lista
 - Quando não encontra, `match` e `search` retornam `None`
 - RAW string (`r"..."`): a barra invertida é tratada como texto puro, sem caracteres especiais como `\n`
@@ -11,10 +11,10 @@ Uma expressão regular (regex) é uma forma flexível e concisa de localizar cad
 - `[ ]` indica um conjunto de opções, como `[\w\.-]`
 - `.group()` mostra o trecho encontrado
 
-## Exemplos e lugares aplicados
+Exemplos e lugares aplicados
 Extrair e-mails de páginas HTML, validar telefones e CPFs, localizar padrões em textos grandes.
 
-## Minhas anotações da aula
+ Minhas anotações da aula
 - `match` só acha o texto no começo da string; `search` acha em qualquer lugar. Se não achar, ambos retornam `None`.
 - Em RAW string o `\n` aparece como texto e não pula linha.
 - `\w\w\w\w\w\w` acha 6 caracteres seguidos; `\w+` pega a palavra inteira; `\w{6,8}` limita de 6 a 8 caracteres; `\d+` pega o número inteiro.
@@ -24,7 +24,7 @@ Extrair e-mails de páginas HTML, validar telefones e CPFs, localizar padrões e
 
 ## Código
 
-### Exemplo 1: match e search
+###match e search
 ```python
 import re
 
@@ -50,7 +50,7 @@ None
 None
 ```
 
-### Exemplo 2: RAW string
+### RAW string
 ```python
 print("Leonardo\nFernanda")
 print(r"Leonardo\nFernanda")
@@ -62,7 +62,7 @@ Fernanda
 Leonardo\nFernanda
 ```
 
-### Exemplo 3: \w, \d, + e {}
+### \w, \d, + e {}
 Na aula cada busca repetia um bloco `if/else`; aqui está a mesma ideia com um laço.
 ```python
 import re
@@ -100,7 +100,7 @@ else:
         print("Nao encontrado")
 ```
 
-### Exemplo 4: findall
+### findall
 ```python
 import re
 
@@ -115,7 +115,7 @@ else:
 ```
 Saída: `aluno`, `José`, `reprovado`, `tirou`, `segunda`, `nota` (uma por linha).
 
-### Exemplos 5 e 6: e-mails de uma página
+### e-mails de uma página
 ```python
 import re
 import requests
