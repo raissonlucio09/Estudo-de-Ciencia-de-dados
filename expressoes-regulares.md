@@ -24,7 +24,7 @@ Extrair e-mails de páginas HTML, validar telefones e CPFs, localizar padrões e
 
 ## Código
 
-###match e search
+### match e search
 ```python
 import re
 
