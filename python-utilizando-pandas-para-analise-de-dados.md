@@ -2,17 +2,17 @@
 
 Este tópico trabalha séries temporais em Python com a biblioteca Pandas (leitura dos dados) e o pacote Statsmodels (análise e previsão). Séries temporais têm sazonalidade, característica que a regressão comum não trata.
 
-## Conceitos
+Conceitos
 - `read_csv` do Pandas lê o arquivo e trata as datas (essenciais em séries temporais)
 - `matplotlib` desenha o gráfico da série; `truncate()` mostra só um período
 - `SARIMAX` (statsmodels): modelo ARIMA com sazonalidade; `order=(p,d,q)` e `seasonal_order=(P,D,Q,s)`, onde `s` é a sazonalidade (12 para dados mensais)
 - `fit()` ajusta o modelo e `predict(start, end)` faz a previsão
 - AIC: quanto menor, mais preciso o modelo; é usado para escolher os melhores parâmetros
 
-## Exemplos e lugares aplicados
+ Exemplos e lugares aplicados
 Previsão de vendas com sazonalidade (como flores no Dia das Mães), demanda, consumo e estoque.
 
-## Minhas anotações da aula
+Minhas anotações da aula
 - Os dados do exemplo são vendas mensais de flores de 2001 a 2018, em arquivo `serietemporal.csv` (datas no formato AA-MM), com maio muito acima dos outros meses e crescimento de cerca de 10% ao ano. O arquivo é material complementar da aula.
 - O gráfico mostra a sazonalidade (o padrão se repete todo ano) e uma tendência de crescimento.
 - No exemplo 3, o modelo foi comparado com valores conhecidos (2011 a 2018) e depois previu 2019, com diferença menor que 0,2% em relação à planilha. Os dados foram criados com regras fixas; no mundo real o erro tende a ser maior.
@@ -37,7 +37,7 @@ Ano-mês   Valor
 01-12     250
 ```
 
-### Exemplos 1 e 2: leitura e gráfico
+### leitura e gráfico
 ```python
 from pandas import read_csv
 from pandas import datetime
@@ -62,7 +62,7 @@ serie.plot()
 pyplot.show()
 ```
 
-### Exemplo 3: SARIMAX e previsão
+### SARIMAX e previsão
 ```python
 from pandas import read_csv
 from pandas import datetime
@@ -129,7 +129,7 @@ Previsto x planilha para 2019:
 | 995.52 | 995 |
 | 1390.48 | 1390 |
 
-### Exemplo 4: escolher os melhores parâmetros pelo AIC
+### escolher os melhores parâmetros pelo AIC
 ```python
 from pandas import read_csv
 from pandas import datetime
