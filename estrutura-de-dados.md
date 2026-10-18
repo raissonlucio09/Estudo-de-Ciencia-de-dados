@@ -12,9 +12,6 @@ Conceitos
  Exemplos e lugares aplicados
 Lista de notas de alunos, cadastro de uma pessoa (dicionário), remover duplicados de uma lista (conjunto).
 
-## Minhas anotações da aula
-(Escreva aqui com suas palavras o que o professor explicou nesta aula.)
-
 ## Código
 ```python
 # Lista
