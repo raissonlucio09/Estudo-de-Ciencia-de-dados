@@ -2,17 +2,17 @@
 
 Uma variável reserva espaço de memória para armazenar um dado e é referenciada por um nome. Python trabalha com três tipos básicos (numérico, string e booleano) e usa operadores aritméticos, relacionais e lógicos para calcular e comparar valores.
 
-## Conceitos
+ Conceitos
 - Tipos de dados: numérico (`int` sem casas decimais e `float` com casas decimais), texto (`str`) e booleano (`bool`, só `True` ou `False`)
 - `print()` exibe mensagens; `input()` lê dados do teclado (o valor lido vem como texto)
 - Operadores aritméticos: unários (`+` e `-` de sinal) e binários (`*`, `/`, `%`, `+`, `-`); parênteses mudam a prioridade
 - Operadores relacionais: `==`, `>`, `<`, `>=`, `<=`, `!=` (sempre retornam `True` ou `False`)
 - Operadores lógicos: `not`, `and`, `or` (prioridade: `not`, depois `and`, depois `or`)
 
-## Exemplos e lugares aplicados
+ Exemplos e lugares aplicados
 Cálculos em geral, validação de dados digitados pelo usuário e decisões que dependem de mais de uma condição.
 
-## Minhas anotações da aula
+Minhas anotações da aula
 Uma variável reserva espaço de memória para armazenar um certo tipo de dado e relacionado a um nome para referenciar o seu conteúdo (nome da variável). Uma variável é um espaço de memória que pode conter, a cada tempo, valores diferentes.
 
 Python trabalha com 3 tipos de dados básicos: numérico, string e booleano. Nos numéricos temos o tipo inteiro, que não possui casa decimal, e o número real - ponto flutuante (float), que possui casas decimais.
