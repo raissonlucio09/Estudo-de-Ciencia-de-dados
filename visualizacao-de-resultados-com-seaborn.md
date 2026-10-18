@@ -2,17 +2,17 @@
 
 O Seaborn é uma biblioteca de visualização de dados baseada no Matplotlib, com uma interface de alto nível para gráficos mais atraentes e informativos. Nesta aula também foram vistos gráficos 3D com o `mpl_toolkits.mplot3d`.
 
-## Conceitos
+Conceitos
 - `sns.load_dataset("iris")` carrega um conjunto de dados de exemplo (flores iris, com 3 espécies)
 - `sns.swarmplot()` mostra os pontos de cada categoria sem sobreposição
 - `sns.set()` aplica o estilo do Seaborn aos gráficos do Matplotlib; `plt.style.use('classic')` volta ao estilo padrão do Matplotlib
 - Gráficos 3D: `projection='3d'`, `ax.scatter()` (pontos) e `ax.plot_trisurf()` (superfície)
 - `np.cumsum()` soma acumulada, `np.linspace()` valores igualmente espaçados
 
-## Exemplos e lugares aplicados
+Exemplos e lugares aplicados
 Relatórios de análise de dados com visual mais agradável, comparação de categorias e visualização de dados em três dimensões.
 
-## Minhas anotações da aula
+Minhas anotações da aula
 - Exemplo 1: no gráfico das iris, a espécie setosa tem as menores pétalas e a virginica as maiores.
 - Exemplos 2 e 3 geram o mesmo gráfico; a diferença é só ligar o estilo do Seaborn (`sns.set()`), e a diferença visual é grande.
 - Os exemplos 4 e 5 (histograma e barras) são os mesmos do Matplotlib, agora com o estilo do Seaborn.
@@ -20,7 +20,7 @@ Relatórios de análise de dados com visual mais agradável, comparação de cat
 
 ## Código
 
-### Exemplo 1: swarmplot
+### swarmplot
 ```python
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -31,7 +31,7 @@ plt.show()
 ```
 Observação: o `load_dataset` baixa o conjunto de dados da internet na primeira vez. Em versões novas do Seaborn pode ser preciso usar `hue="species"` junto para evitar avisos.
 
-### Exemplo 2: Matplotlib puro
+### Matplotlib puro
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -46,7 +46,7 @@ plt.legend('ABCDE', ncol=2, loc='upper left')
 plt.show()
 ```
 
-### Exemplo 3: com o estilo do Seaborn
+### com o estilo do Seaborn
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
@@ -62,7 +62,7 @@ plt.legend('ABCDE', ncol=2, loc='upper left')
 plt.show()
 ```
 
-### Exemplo 4: histograma com Seaborn
+### histograma com Seaborn
 ```python
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -74,7 +74,7 @@ plt.hist(x, num_bins, facecolor='green')
 plt.show()
 ```
 
-### Exemplo 5: barras com Seaborn
+### barras com Seaborn
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -99,7 +99,7 @@ plt.legend()
 plt.show()
 ```
 
-### Exemplo 6: gráfico 3D de pontos
+### gráfico 3D de pontos
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -120,7 +120,7 @@ ax.set_zlabel('Eixo Z')
 plt.show()
 ```
 
-### Exemplo 7: superfície 3D (exemplo do Python Graph Gallery)
+### superfície 3D (exemplo do Python Graph Gallery)
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
@@ -158,4 +158,4 @@ plt.show()
 ax.plot_trisurf(df['Y'], df['X'], df['Z'], cmap=plt.cm.jet, linewidth=0.01)
 plt.show()
 ```
-Fonte do exemplo: https://python-graph-gallery.com/371-surface-plot/
+
