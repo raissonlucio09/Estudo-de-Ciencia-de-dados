@@ -2,17 +2,17 @@
 
 A estatística é a parte da matemática aplicada que fornece métodos para coletar, organizar, descrever, analisar e interpretar dados, e usá-los na tomada de decisão. O método estatístico se baseia na teoria das probabilidades.
 
-## Conceitos
+Conceitos
 - Método: conjunto de meios para chegar a um fim desejado (segundo Crespo)
 - Fases do método estatístico: coleta, crítica, apuração, exposição e análise dos dados
 - Coleta direta (fonte primária): contínua, periódica ou ocasional; coleta indireta: obtida a partir da direta ou de fenômenos relacionados
 - População x amostra: a amostra é um subconjunto finito da população e precisa ser representativa
 - Amostragem casual (aleatória simples) e amostragem proporcional estratificada
 
-## Exemplos e lugares aplicados
+Exemplos e lugares aplicados
 Pesquisas eleitorais, censo do IBGE, pesquisa de satisfação de clientes, análise de vendas de uma empresa.
 
-## Minhas anotações da aula
+ Minhas anotações da aula
 - Por que não basta um experimento simples (ex.: variar o preço de uma TV): outros fatores (avaliações, impostos, juros, concorrência) também influenciam as vendas; por isso o método estatístico considera todas as variáveis e registra suas variações.
 - Coleta: contínua (ex.: chuva de uma região), periódica (ex.: censo do IBGE, a cada cerca de 10 anos) e ocasional (ex.: surto de febre amarela).
 - Crítica dos dados: procurar falhas e erros antes de analisar. Exemplo da aula: um campo "motivo da devolução" com "Quebra" como padrão distorce o resultado; e se só 5% preenchem o campo de satisfação, 1% do total de clientes insatisfeitos equivale a 20% de quem respondeu.
@@ -30,5 +30,4 @@ Pesquisas eleitorais, censo do IBGE, pesquisa de satisfação de clientes, anál
 | Feminino | mais de 40 anos | 900 | 9 |
 | Total | | 3000 | 30 |
 
-## Código
-Este tópico não teve código.
+
