@@ -2,17 +2,17 @@
 
 SciPy é uma biblioteca de código aberto para computação científica de alta performance, feita para engenheiros, matemáticos, cientistas e estatísticos. Funciona junto com os arrays do NumPy. Nesta aula foi usada para álgebra linear.
 
-## Conceitos
+ Conceitos
 - Matriz inversa: só existe para matriz quadrada; A x A⁻¹ = I (matriz identidade, com 1 na diagonal e 0 no resto)
 - `linalg.inv(A)` calcula a inversa
 - Sistema de equações lineares: A·X = B, logo X = A⁻¹·B; também pode ser resolvido com `solve()`
 - Determinante: definido para matrizes quadradas; calculado com `det()`
 - `round(valor, casas)` arredonda para o número de casas decimais desejado
 
-## Exemplos e lugares aplicados
+Exemplos e lugares aplicados
 Resolver sistemas de equações, otimização, integração numérica e cálculos de engenharia e estatística.
 
-## Minhas anotações da aula
+ Minhas anotações da aula
 - A prova real da inversa é multiplicar A pela inversa e obter a matriz identidade.
 - O sistema do exemplo (x + y + z = 6; 8x + 3y - z = 8; 2x - 3y + z = 12) tem solução x = 2, y = -1 e z = 5.
 - `solve()` pode dar pequenas diferenças (como -0.9999999999999998) por arredondamento; usa-se `round()` para ajustar.
@@ -20,7 +20,7 @@ Resolver sistemas de equações, otimização, integração numérica e cálculo
 
 ## Código
 
-### Exemplo 1: matriz inversa
+### matriz inversa
 ```python
 import numpy as np
 from scipy import linalg
@@ -39,7 +39,7 @@ Saída da inversa:
  [-1.  0.  3.]]
 ```
 
-### Exemplo 2: prova real
+### prova real
 ```python
 import numpy as np
 from scipy import linalg
@@ -56,7 +56,7 @@ Saída (matriz identidade):
  [0. 0. 1.]]
 ```
 
-### Exemplo 3: sistema de equações com a inversa
+### sistema de equações com a inversa
 ```python
 import numpy as np
 from scipy import linalg
@@ -72,7 +72,7 @@ print("Valor da variável z:", C[2][0])
 ```
 Saída: `x = 2.0`, `y = -1.0`, `z = 5.0`
 
-### Exemplos 4 e 5: função solve e round
+### função solve e round
 ```python
 import numpy as np
 from scipy import linalg
@@ -87,7 +87,7 @@ print("Valor da variável z:", round(C[2][0],2))
 ```
 Saída: `x = 2.0`, `y = -1.0`, `z = 5.0` (sem o `round`, o y sai como -0.9999999999999998).
 
-### Exemplo 6: determinante
+### determinante
 ```python
 import numpy as np
 from scipy import linalg
